@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/search/search",
+    "pages/sortSearch/sortSearch",
+    "pages/my/my"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "selectedColor": "#d81e06",
+    "borderStyle": "#d9d9d9",
+    "list":[
+    {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/daizi1.png",
+      "selectedIconPath": "images/daizi2.png"
+    },
+    {
+      "pagePath": "pages/sortSearch/sortSearch",
+      "text": "搜索",
+      "iconPath": "images/sousuo1.png",
+      "selectedIconPath": "images/sousuo2.png"
+    },
+    {
+      "pagePath": "pages/logs/logs",
+      "text": "领福利",
+      "iconPath": "images/daizi1.png",
+      "selectedIconPath": "images/daizi2.png"
+    },
+    {
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath": "images/wode1.png",
+      "selectedIconPath": "images/wode2.png"
+    }
+    ]
+  }
+}

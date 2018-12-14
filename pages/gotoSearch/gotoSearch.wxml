@@ -1,0 +1,5 @@
+<view class='goto-search' bindtap='gotoSearch'>
+      <image style='width:36rpx;height:36rpx;vertical-align:middle;margin-right:10rpx' src='../../images/search.png'></image>
+      <text style='line-height:35px'>搜索换购产品</text>
+</view>
+<slot>></slot>

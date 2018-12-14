@@ -1,0 +1,17 @@
+<!--pages/my/my.wxml-->
+<view class='my-wrap'>
+  <view class='my-header'>
+    <view class='my-avatar'>
+      <image src=''></image>
+    </view>
+    <view class='my-name'>UN:</view>
+    <view class='my-login'>
+       <button type='primary' bindtap='toLogin'>Login</button>
+       <button open-type='getUserInfo' bindgetuserinfo='getuserinfos'>s</button>
+       <button bindtap='getInfo'>授权</button>
+    </view>
+  </view>
+  <view class='my-content'>
+    <text>{{loginValue}}</text>
+  </view>
+</view>

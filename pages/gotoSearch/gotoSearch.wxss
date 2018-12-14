@@ -1,0 +1,14 @@
+.goto-search{
+  width: 700rpx;
+  margin: 0 auto;
+  height: 35px;
+  text-align: center;
+  background: rgb(241, 241, 241);
+  border-radius: 30rpx;
+  line-height: 35px;
+}
+.goto-search text{
+  font-size: 11pt;
+  color: rgb(211, 211, 211);
+  line-height: 35px;
+}

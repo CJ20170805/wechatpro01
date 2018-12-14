@@ -1,0 +1,143 @@
+/**index.wxss**/
+/* .new-tab{
+  width: 20rem;
+  height: 120rpx;
+  background-color: lightblue;
+  position: fixed;
+  z-index: 60;
+  bottom: 0;
+}
+.tab-item{
+  display: inline-block;
+  width: 10rem;
+  height: 120rpx;
+  line-height: 120rpx;
+} */
+.header{
+  width: 100%;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 50;
+  top: 0;
+}
+.scroll-a{
+  width: 180rpx;
+  height: 30rpx;
+  display: inline-block;
+}
+.main{
+  width: 100%;
+}
+.scroll-view-x{
+  height: 35px;
+  width: 100%;
+  background-color: #fff;
+  white-space: nowrap;
+  position:fixed;
+  z-index:10;
+  top:35px;
+}
+.scroll-view-item{
+  width: 35px;
+  height: 35px;
+  display:inline-block;
+  margin:0 35rpx;
+  line-height: 35px;
+  cursor: pointer;
+  font-size: 11pt;
+  color: rgb(125, 125, 125);
+
+}
+.fixed-nav{
+  width: 55px;
+  height: 35px;
+  text-align: center;
+  padding-right: 10px;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 20;
+  left: 0;
+  top: 34px;
+  border-right: 1px solid;
+  border-image: linear-gradient(to bottom, white,white, rgb(180, 172, 172),white,white);
+  border-image-slice: 10;
+}
+.scroll-view-item text{
+  padding-bottom: 6px;
+}
+.main .nav-active{
+  color: rgb(246, 46, 46);
+  border-bottom: 2px solid rgb(246, 46, 46);
+}
+::-webkit-scrollbar{
+width: 0;
+height: 0;
+color: transparent;
+}
+.switch-content{
+  min-height: 60rem;
+  padding-top: 142rpx;
+}
+.content .switch-content .swiper-item{
+  width: 100%;
+  background-color: red;
+}
+.menu-wrap{
+  width: 100%;
+}
+.menu-wrap .menu-1 .menu-item{
+  width: 25%;
+  height: 60px;
+  background-color: #ffffff;
+  display: inline-block;
+  text-align: center;
+  padding: 10px 0;
+}
+.menu-wrap .menu-1 .menu-item image{
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  /* margin-bottom: -10px; */
+}
+.menu-wrap .menu-1 .menu-item text{
+  font-size: 9pt;
+  color: rgb(125, 125, 125);
+  display: inline-block;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+} */

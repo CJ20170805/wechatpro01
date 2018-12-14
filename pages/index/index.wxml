@@ -1,0 +1,112 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='header'>
+    <goto-search></goto-search>
+  </view>
+  <view class='main'>
+    <view class='fixed-nav' bindtap='switchPage' data-navname="0" hover-class='none'>
+      <text class="{{switchClass.activeName == '0'? 'scroll-view-item nav-active':'scroll-view-item'}}">精选</text>
+    </view>
+    <!-- 滑动导航栏 -->
+    <scroll-view class="scroll-view-x" scroll-x style="width: 100%">
+      <view wx:for="{{navItem}}" wx:key="{item}" class="scroll-view-item" bindtap='switchPage' hover-class="none" 
+      data-navname="{{item.data}}">
+        <text class="{{switchClass.activeName === item.data? 'nav-active' : '' }}">{{item.name}}              </text>
+      </view>
+    </scroll-view>
+    
+   <view class='content'>
+    <swiper
+    class='switch-content'
+    current='{{currentContent}}'
+    indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}"
+    interval="{{interval}}"
+    duration="{{duration}}"
+    bindchange='swiperChange'
+    >
+      <block>
+        <!-- 精选页面 -->
+        <swiper-item>
+          <!-- banner -->
+           <swiper
+              indicator-dots="true"
+              autoplay="true"
+              interval="3000"
+              duration="1000"
+            >
+              <block>
+                <swiper-item>
+                  <image src="../../images/banner1.jpg" style='width:100%;height:100%;'  />
+                </swiper-item>
+                <swiper-item>
+                  <image src="../../images/banner2.jpg" style='width:100%;height:100%;' />
+                </swiper-item>
+                 <swiper-item>
+                  <image src="../../images/banner3.jpg" style='width:100%;height:100%;' />
+                </swiper-item>
+              </block>
+           </swiper>
+           <!-- main menu  -->
+           <view class='menu-wrap'>
+             <view class='menu-1'>
+                <view class='menu-item'>
+                   <image src='../../images/icon_1.png'></image>
+                   <text>9.9元拼</text>
+                </view>
+                <view class='menu-item'>
+                   <image src='../../images/icon_2.png'></image>
+                   <text>1元福利</text>
+                </view>
+                <view class='menu-item'>
+                   <image src='../../images/icon_3.png'></image>
+                   <text>好货清单</text>
+                </view>
+                <view class='menu-item'>
+                   <image src='../../images/icon_1.png'></image>
+                   <text>自营优选</text>
+                </view>
+             </view>
+             <view class='menu-1'>
+                <view class='menu-item'>
+                   <image src='../../images/icon_2.png'></image>
+                   <text>名品特卖</text>
+                </view>
+                <view class='menu-item'>
+                   <image src='../../images/icon_1.png'></image>
+                   <text>工厂直供</text>
+                </view>
+                <view class='menu-item'>
+                   <image src='../../images/icon_2.png'></image>
+                   <text>砍价免费领</text>
+                </view>
+                <view class='menu-item'>
+                   <image src='../../images/icon_3.png'></image>
+                   <text>签到领红包</text>
+                </view>
+             </view>
+           </view>
+        </swiper-item>
+      </block>
+      <block>
+        <swiper-item>
+          2
+        </swiper-item>
+      </block>
+      <block>
+      <swiper-item>
+        3
+      </swiper-item>
+      </block>
+    </swiper>
+  </view>  
+  </view>
+  <!-- <view class='new-tab'>
+     <view class='tab-item' bindtap='switchT'>
+       <text>首页</text>
+     </view>
+     <view class='tab-item'>
+       <text>我的</text>
+     </view>
+  </view> -->
+</view>
