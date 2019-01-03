@@ -36,14 +36,8 @@
               duration="1000"
             >
               <block>
-                <swiper-item>
-                  <image src="../../images/banner1.jpg" style='width:100%;height:100%;'  />
-                </swiper-item>
-                <swiper-item>
-                  <image src="../../images/banner2.jpg" style='width:100%;height:100%;' />
-                </swiper-item>
-                 <swiper-item>
-                  <image src="../../images/banner3.jpg" style='width:100%;height:100%;' />
+                <swiper-item wx:for="{{banners}}" wx:key="item">
+                  <image src="{{item.img}}" style='width:100%;height:100%;'/>
                 </swiper-item>
               </block>
            </swiper>

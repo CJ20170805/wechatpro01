@@ -17,7 +17,7 @@ page{
   flex-direction: row;
 }
 .my-header .my-avatar{
-  height: 300rpx;
+  height: 220rpx;
   width: 30%;
 }
 .my-header .my-name{

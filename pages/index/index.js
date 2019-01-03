@@ -33,6 +33,10 @@ Page({
         data: 6
       }
     ],
+    banners: [
+      { img: 'http://www.huibohehe.com/miniApi/imgs/banner1.jpg'},
+      { img: 'http://www.huibohehe.com/miniApi/imgs/banner2.jpg'}
+    ],
     switchClass: {
       activeName: ''
     },

@@ -5,7 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    loginValue: "暂无"
+    loginValue: "暂无",
+    username: '',
+    userAvatar: '',
+    userCity: ''
   },
   toLogin: function () {
 
@@ -28,24 +31,26 @@ Page({
 
               // request to server
 
-              wx.request({
-                url: 'https://www.huibohehe.com/miniApi/login.php',
-                data: {
-                  'code': res
-                },
-                header: {
-                  'content-type': 'application/x-www-form-urlencoded'
-                },
-                method: 'POST',
-                dataType: 'json',
-                responseType: 'text',
-                success: function(res) {
-                  console.log('serverData:', res)
-                },
-                fail: function(res) {
-                  console.log('serverError')
-                }
-              })
+              // wx.request({
+              //   url: 'https://www.huibohehe.com/miniApi/login.php',
+              //   data: {
+              //     code: code,
+              //     iv: res.iv,
+              //     encrypted: res.encryptedData
+              //   },
+              //   header: {
+              //     'content-type': 'application/x-www-form-urlencoded'
+              //   },
+              //   method: 'POST',
+              //   dataType: 'json',
+              //   responseType: 'text',
+              //   success: function(res) {
+              //     console.log('serverData:', res)
+              //   },
+              //   fail: function(res) {
+              //     console.log('serverError')
+              //   }
+              // })
             },
             fail: function(res) {
               console.log('userInfoErr:', res);
@@ -59,7 +64,16 @@ Page({
     })
   },
   getuserinfos: function (e) {
-    console.log(e)
+    var data = e.detail.rawData
+    console.log('DDDDD:',data.nickName)
+    // wx.authorize({
+    //   scope: 'scope.userInfo',
+    //   success: function (res) { },
+    //   fail: function (res) { }
+    // })
+    // this.setData({
+    //   username: data.nickName
+    // })
   },
   getInfo: function () {
     wx.authorize({
@@ -72,7 +86,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
   },
 
   /**

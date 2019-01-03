@@ -1,5 +1,6 @@
 {
   "usingComponents" : {
     "goto-search": "../gotoSearch/gotoSearch"
-  }
+  },
+  "navigationBarTitleText": "分类"
 }

@@ -2,7 +2,8 @@
 <view class='my-wrap'>
   <view class='my-header'>
     <view class='my-avatar'>
-      <image src=''></image>
+      <!-- <image src=''></image> -->
+       <open-data type="userAvatarUrl"></open-data>
     </view>
     <view class='my-name'>UN:</view>
     <view class='my-login'>
@@ -13,5 +14,6 @@
   </view>
   <view class='my-content'>
     <text>{{loginValue}}</text>
+    <open-data type="userCity"></open-data>
   </view>
 </view>
